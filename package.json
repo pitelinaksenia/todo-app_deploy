@@ -1,22 +1,24 @@
 {
-  "name": "shoppingcart",
-  "license": "0BSD",
+  "name": "todoapp",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "expo": "~52.0.7",
-    "expo-status-bar": "~2.0.0",
-    "react": "18.3.1",
-    "react-native": "0.76.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.20.0"
-  },
-  "private": true
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "expo": "^52.0.7",
+    "react": "^18.3.1",
+    "react-native": "^0.76.2",
+    "vite": "^6.0.3"
+  }
 }
